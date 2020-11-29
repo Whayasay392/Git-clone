@@ -1,0 +1,465 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header  {
+    background: rgb(0, 6, 34);
+    padding: 1rem  0;
+    display: flex; 
+    align-items: center;
+}
+nav {
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+nav ul  {
+    float: right;
+}
+nav ul li, nav ol li   {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 30px;
+   
+}
+nav ul li a   {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 7px 13px;
+    position: relative;
+    transition: .2s;
+}
+nav ul li a:hover   {
+    background: gray;
+    border-radius: 5px;
+}
+#notification-icon  {
+    margin-left: 45rem;
+    justify-self: self-end;
+}
+#notification-icon, #plus-icon  {
+    color: white;
+}
+#github-icon    {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem;
+    float: left;
+    position: absolute;
+   
+}
+#search-field   {
+    border: 1px solid rgb(221, 220, 220);
+    background:  rgb(0, 6, 34);
+    color: #ffff;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-left: 1.8rem;
+
+}
+#toggle-nav, #toggle-nav2 {
+    display: none;
+    cursor: pointer;
+    color: white;
+    float: right;
+    font-size: 2rem;
+    margin-right: 15px;
+    line-height: 28px;
+    /* margin-top: 20px; */
+    
+    
+}
+#ham-menu   {
+    display: none;
+}
+
+
+
+.nav-img-div    {
+    max-width: 5%;
+}
+
+main    {
+   
+    width: 80%;
+    margin: 0 auto;
+}
+.main-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu-container   {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2%;
+    padding: 1rem 0;
+}
+svg {
+    margin-right: 0.3rem;
+
+}
+.top-menu-div  {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu-divs  {
+flex-basis: 20%;
+display: flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+.top-menu-divs:after  {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+.br {
+    width: 100%;
+    margin-left: -33.33%;
+    margin-right: -33.33%;
+    border-bottom: 1px solid gray;
+}
+.top-menu   {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.repo-number    {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    background: rgb(177, 177, 177);
+    color: black;
+    font-size: 600;
+    margin-left: 0.4rem;
+}
+.left-box   {
+    flex-basis: 25%;
+   
+    padding: 0 1rem;
+  }
+.right-box  {
+    flex-basis: 70%;
+   
+}
+
+.profile-img-div    {
+    flex-basis: 90%;
+    margin: 0 auto;
+  
+   /* width: 80%; */
+}
+.profile-img  {
+    max-height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+.profile-name   {
+    font-size: 1rem;
+    color: gray;
+}
+.profile-button {
+    width: 90%;
+    background: rgb(223, 219, 219);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.repo-filter-section    {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+
+}
+
+.search-repo    {
+    flex-basis: 60%;
+}
+.find-repo  {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    background: none;
+    padding: 5px 1rem;
+    font-size: 0.8rem;
+}
+.repo-filter    {
+    flex-basis: 10%;
+}
+.language-filter    {
+    flex-basis: 15%;
+}
+.repo-btn {
+    background: rgb(231, 231, 231);
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    font-size: 0.8rem;
+    border: 1px solid rgb(110, 106, 106);
+    padding: 5px 6px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    transition: .2s;
+    cursor: pointer;
+}
+.repo-btn:hover {
+    outline: none;
+    background: rgb(110, 105, 105);
+}
+.select {
+    background: none;
+    color: #333333;
+    border: none;
+    width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* appearance: none;
+    -webkit-appearance: none; */
+}
+.select:focus
+.select:hover   {
+    outline: none;
+    border: 1px solid #333333;
+}
+.select option  {
+    background: #ffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.new-btn    {
+    background: rgb(38, 129, 38);
+    width: 100%;
+    color: #ffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 14px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.repo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* border-top: 0.2px solid gray; */
+   
+    box-shadow: 0 4px 2px -2px gray;
+}
+.repo-section   {
+    flex-basis: 30%;
+  
+}
+.star-box   {
+    position: relative;
+    flex-basis: 30%;
+   
+}
+.project-name   {
+    font-size: 1.2rem;
+    color: blue;
+    text-align: left;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.forked {
+    font-size: 0.7rem;
+    color: gray;
+}
+.project-details    {
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 2rem;
+}
+.project-label-div  {
+    display: flex;
+    justify-content: space-between;
+
+}
+.project-language, .project-date   {
+    font-size: 0.7rem;
+    color: gray;
+    line-height: 1.5rem;
+}
+
+.star-btn   {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid gray;
+    background: rgb(231, 231, 231);
+    border-radius: 5px;
+    padding: 5px 17px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#star-icon  {
+    margin-right: 0.5rem;
+}
+
+
+/* Media Query */
+@media (max-width: 799px)   {
+    #toggle-nav {
+        display: block;
+    }
+nav ul  {
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        background:  rgb(0, 6, 34);
+        top: 4.5rem;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+    
+nav ul li   {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+   
+}
+#notification-icon  {
+    margin-left: auto;
+    justify-self: self-end;
+}
+
+#ham-menu:checked ~ ul{
+    left: 0;
+}
+#ham-menu:checked ~ label #toggle-nav {
+    display: none;
+}
+#ham-menu:checked ~ label #toggle-nav2 {
+    display: block;
+}
+    
+    
+    
+    /* nav {
+       
+        flex-direction: column;
+    }
+    ul  {
+        flex-direction: column;
+    } */
+    .main-container {
+        flex-direction: column;
+    }
+
+    main    {
+        width: 95%;
+    }
+    .top-menu-container   {
+        width: 95%;
+       
+    }
+    .left-box   {
+        flex-basis: 25%;
+        border: 1px solid black;
+        padding: 0 1rem;
+      }
+    .profile-img-div    {
+        flex-basis: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      
+       /* width: 80%; */
+    }
+    .profile-img  {
+        max-height: auto;
+        max-width: 40%;
+        flex-basis: 40%;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .profile-name   {
+        float: left;
+        flex-basis: 40%;
+    }
+    .profile-button {
+        width: 100%;
+        
+    }
+    
+    .repo-filter-section    {
+        display: flex;
+        justify-content: space-between;
+        margin: 4% 0;
+    
+    }
+    
+    .search-repo    {
+        flex-basis: 95%;
+        margin: 0 auto;
+    }
+    .find-repo  {
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 100%;
+        background: none;
+        padding: 5px 1rem;
+        font-size: 0.8rem;
+    }
+    .repo-filter    {
+        display: none;
+    }
+    .language-filter    {
+        display: none;
+    }
+    
+
+   
+    .repo-section   {
+        flex-basis: 60%;
+        border: 1px solid black;
+    }
+    .star-box   {
+        position: relative;
+        flex-basis: 30%;
+    }
+    .project-name   {
+        font-size: 1rem;
+       
+        line-height: 1rem;
+        font-weight: 600;
+    }
+    .project-details    {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    .project-language, .project-date   {
+        font-size: 0.7rem;
+        color: gray;
+        line-height: 1.5rem;
+    }
+    
+
+}
